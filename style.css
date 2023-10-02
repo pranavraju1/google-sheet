@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    display: flex;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+#header>b{
+    text-align: center;
+    padding: 10px 0;
+    min-width: 100px;
+    border: 1px solid #dfe4e9;
+}
+.row{
+    display: flex;
+}
+.row>b,.row>div{
+    padding: 10px 0;
+    min-width: 100px;
+    border: 1px solid #dfe4e9;
+}
+.row>b:first-child{
+    text-align: center;
+    position: sticky;
+    left: 0px;
+    background-color: white;
+}
+.options{
+    padding: 10px;
+    /* background-color: #ecf0f1 ; */
+    border: 5px solid black;
+    display: flex;
+    flex-direction: row;
+}
+#active-cell{
+    background-color: white;
+    padding: 2px 10px;
+}
