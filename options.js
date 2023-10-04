@@ -15,7 +15,6 @@ const initialoptionsstate = {
     fontSize:14,
 };
 
-const activeoptionstate = {...initialoptionsstate}
 
 // this function gets the value of the cell id
 // below function will be trigered when the cell is focused
@@ -23,7 +22,7 @@ function onCellFocus(e){
 
     // whenever the cell is focused change the value of the active cell to the value of the id
     activeCell = e.target;
-    activeCellelement.innerHTML=e.target.id; 
+    activeCellelement.innerHTML=e.target.id;    
 }
 
 
