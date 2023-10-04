@@ -17,3 +17,7 @@
     background-color: #d0d8e0aa;
 
 }
+#active-cell{
+    background-color: lightgreen;
+    width: 30px;
+}

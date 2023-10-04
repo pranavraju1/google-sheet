@@ -109,3 +109,57 @@ function onChangeBGColor(colors){
         activeCell.style.backgroundColor = selectedcolor;
     }
 }
+
+
+
+function fontsize(selectElement) {
+    // Get the selected option
+    var selectedOption = selectElement.options[selectElement.selectedIndex];
+    var selectedValue = selectedOption.value;
+    changefontsize(selectedValue);
+  }
+ function changefontsize(value){
+    if(activeCell){
+        if(value == "14"){
+            activeCell.style.fontSize = "14px";
+            console.log(activeCell.style.fontSize);
+        }else if(value == "16"){
+            activeCell.style.fontSize = "16px";
+            console.log(activeCell.style.fontSize);
+        }else if(value == "18"){
+            activeCell.style.fontSize = "18px";
+            console.log(activeCell.style.fontSize);
+        }
+    }
+ }
+  
+
+
+  function funt(selectElement){
+    var selectedOption = selectElement.options[selectElement.selectedIndex];
+    var selectedValue = selectedOption.value;
+    changefont(selectedValue);
+  }
+  function changefont(value){
+    if(activeCell){
+        if(value == "MonoSpace"){
+            activeCell.style.fontFamily = "MonoSpace";
+        }else if(value == "Sans-serif"){
+            activeCell.style.fontFamily = "Sans-serif";
+        }else if(value == "Fantasy"){
+            activeCell.style.fontFamily = "Fantasy";
+        }
+    }
+ }
+
+let text;
+ function onClickcut(val){
+    text = activeCell.innerText;
+    activeCell.innerText="";
+ }
+ function onClickCopy(val){
+    text = activeCell.innerText;
+ }
+ function onClickPaste(val){
+    activeCell.innerText=text;
+ }
