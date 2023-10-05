@@ -6,10 +6,19 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="menus.css">
+    <link rel="shortcut icon" type="image/x-icon" href="resources/logo.ico">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
   </head>
   <body>
+    <div class="cap"></div>
+    <div class="cap1">
+      <div style="background-color: #218c74; color: white; ">File</div>
+      <div style="background-color: #ecf0f1; color: #218c74; padding-left: 5px; padding-right: 5px;">Home</div>
+      <div style="background-color: #218c74; color: white;">Insert</div>
+      <div style="background-color: #218c74; color: white;">Layout</div>
+      <div style="background-color: #218c74; color: white;">Help</div>
+    </div>
     <div id="options">
       <div class="menus">
         <div id="cut" onclick="onClickcut(this)">
@@ -38,10 +47,10 @@
             <option value="20">20</option>
           </select>
         </div>
-        <div id="bold" onclick="onClickBold(this)">B</div>
-        <div id="italic" onclick="onClickItalic(this)">I</div>
-        <div id="underline" onclick="onClickUndreline(this)">U</div>
-        <div id="leftalign" onclick="onClickLeft(this)" class="active-option">
+        <div class="Q" id="bold" onclick="onClickBold(this)">B</div>
+        <div class="Q" id="italic" onclick="onClickItalic(this)">I</div>
+        <div class="Q" id="underline" onclick="onClickUndreline(this)">U</div>
+        <div class="Q" id="leftalign" onclick="onClickLeft(this)" class="active-option">
           <span class="material-icons">
             format_align_left
             </span>
@@ -73,16 +82,18 @@
           </label>
           <input type="color" id="bgcolor-picker" style="width: 0px; height: 0px;" onchange="onChangeBGColor(this)">
         </div>
-        <div>
+        <!-- <div>
           <select id="funt" onclick="funt(this)" name="fs">
             <option value="MonoSpace">Sum</option>
             <option value="Sans-serif"></option>
             <option value="Fantasy">Sub</option>
             <option value="Cursive" >Cursive</option>
           </select>
-        </div>
+        </div> -->
       </div>
-      <div id="active-cell"></div>
+      <div id="active-cell" style="display: inline;"></div>
+      <!-- <span>fx</span>
+      <span class="fx">asdas</span> -->
     </div>
     <div id="header">
       <b style="background-color: gray"></b>

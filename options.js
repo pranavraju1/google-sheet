@@ -4,6 +4,7 @@
 let activeCell = null;
 const activeCellelement = document.getElementById("active-cell");
 
+
 const initialoptionsstate = {
     fontFamily:"",
     isBoldSelected:false,
@@ -23,6 +24,8 @@ function onCellFocus(e){
     // whenever the cell is focused change the value of the active cell to the value of the id
     activeCell = e.target;
     activeCellelement.innerHTML=e.target.id;    
+    let a =document.getElementsByClassName("Q")
+    console.log(a)
 }
 
 
